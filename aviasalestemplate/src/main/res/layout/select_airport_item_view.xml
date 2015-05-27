@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/results_item"
+		android:paddingLeft="55dp"
+		android:paddingRight="16dp">
+
+	<LinearLayout
+			android:id="@+id/llay_destination_fragment_search_item"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/select_airport_item_height"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="50dp"
+			android:gravity="center_vertical"
+			android:orientation="vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/txtv_destination_fragment_search_item_city_country"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:text="ПЕТРОПАВЛОВСК-КАМЧАТСКИЙ"
+				android:textColor="@color/grey_text"
+				android:textSize="16dp"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/txtv_destination_fragment_search_item_airport"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="2dp"
+				android:layout_marginTop="-2dp"
+				android:ellipsize="end"
+				android:singleLine="true"
+				android:text="Очень длинный аэропорт из мест, где не умеют коротко выражаться"
+				android:textColor="@color/light_grey_text"
+				android:textSize="9.33dp"/>
+	</LinearLayout>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/txtv_destination_fragment_search_item_iata"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_marginTop="7dp"
+			android:text="WAW"
+			android:textColor="@color/grey_text"
+			android:textSize="16dp"/>
+
+</RelativeLayout>

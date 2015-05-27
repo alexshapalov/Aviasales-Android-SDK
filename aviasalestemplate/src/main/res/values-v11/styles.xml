@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AviasalesTemplateTheme" parent="BaseAppTheme">
+		<item name="android:dialogTheme">@style/AppTheme.DialogTheme</item>
+	</style>
+
+
+	<style name="AppTheme.DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+		<item name="colorPrimary">@color/colorAsPrimary</item>
+		<item name="colorPrimaryDark">@color/colorAsPrimaryDark</item>
+		<item name="colorAccent">@color/colorAviasalesMain</item>
+	</style>
+
+	<style name="ActionButton"
+	       parent="@android:style/Widget.ActionButton">
+		<item name="android:background">@drawable/action_button_selector</item>
+	</style>
+
+</resources>

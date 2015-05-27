@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/llay_airports_view_title"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:gravity="center_vertical"
+		android:layout_height="48dp">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/txtv_airports_view_list_title"
+			android:layout_width="0dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginBottom="1.8dp"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:textSize="13.33dp"
+			android:textColor="@color/gray_A7A7A7"
+			android:layout_weight="0.9"/>
+
+	<ImageView
+			android:id="@+id/img_airports_view_list_isopened"
+			android:layout_width="wrap_content"
+			android:layout_marginRight="16dp"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_filters_down"/>
+
+</LinearLayout>

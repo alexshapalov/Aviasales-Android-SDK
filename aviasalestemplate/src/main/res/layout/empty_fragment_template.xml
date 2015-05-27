@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+	<LinearLayout
+			android:id="@+id/ll_empty_fragment_info_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_above="@+id/stub_center_view"
+			android:orientation="vertical">
+
+		<ImageView
+				android:id="@+id/iv_empty_fragment_template"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:scaleType="center"
+				android:src="@drawable/ic_empty_screen"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_empty_fragment_template_title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="20dp"
+				android:layout_marginTop="17.66dp"
+				android:gravity="center_horizontal"
+				android:text="Ничего  не найдено"
+				android:textColor="@color/grey_98000000"
+				android:textSize="17.33dp"/>
+	</LinearLayout>
+
+	<View
+			android:id="@+id/stub_center_view"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_centerInParent="true"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_empty_fragment_template_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/ll_empty_fragment_info_container"
+			android:layout_marginTop="8dp"
+			android:gravity="center"
+			android:text="Увы("
+			android:textColor="@color/grey_98000000"
+			android:textSize="13.33dp"/>
+
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_marginBottom="19dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+		<com.devspark.robototextview.widget.RobotoButton
+				android:id="@+id/btn_empty_fragment_template"
+				android:layout_width="wrap_content"
+				android:layout_height="35dp"
+				android:layout_marginBottom="10dp"
+				android:background="@drawable/results_up_btn"
+				android:paddingLeft="16dp"
+				android:paddingRight="16dp"
+				android:text="Сбросить"
+				android:textAllCaps="true"
+				android:textColor="@color/grey_98000000"
+				android:textSize="13.33dp"
+				app:typeface="roboto_medium"/>
+
+	</LinearLayout>
+</RelativeLayout>

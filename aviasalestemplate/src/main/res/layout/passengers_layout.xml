@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		android:id="@+id/rl_passenger_bg"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="0.67dp"
+		android:gravity="center_vertical"
+		android:orientation="horizontal">
+
+	<ImageView
+			android:id="@+id/iv_adult"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:src="@drawable/ic_adult"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_adults"
+			style="@style/search.passengers"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="9dp"
+			android:layout_marginTop="-0.34dp"
+			android:text="1"/>
+
+	<ImageView
+			android:id="@+id/iv_child"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginTop="0.34dp"
+			android:src="@drawable/ic_child"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_children"
+			style="@style/search.passengers"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="9dp"
+			android:layout_marginTop="-0.34dp"
+			android:text="0"/>
+
+	<ImageView
+			android:id="@+id/iv_infant"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="0.34dp"
+			android:src="@drawable/ic_infant"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_infants"
+			style="@style/search.passengers"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="5dp"
+			android:layout_marginTop="-0.34dp"
+			android:text="0"/>
+
+</LinearLayout>

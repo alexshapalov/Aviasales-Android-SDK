@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.aviasales.template.ui.view.TicketFlightSegmentView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="23dp">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_carrier_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/iv_carrier_logo"
+			android:layout_alignTop="@+id/iv_carrier_logo"
+			android:layout_marginLeft="64dp"
+			android:layout_marginTop="-4dp"
+			android:gravity="center_vertical"
+			android:text="Airfrance"
+			android:textColor="@color/black_000000_opacity_12"
+			android:textSize="10dp"/>
+
+	<ImageView
+			android:id="@+id/iv_carrier_logo"
+			android:layout_width="@dimen/airline_logo_width"
+			android:layout_height="@dimen/airline_logo_height"
+			android:layout_alignParentRight="true"
+			android:layout_gravity="center_vertical"
+			android:layout_marginRight="7dp"
+			android:scaleType="centerInside"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_depart_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_carrier_name"
+			android:layout_below="@+id/iv_carrier_logo"
+			android:layout_marginTop="12dp"
+			android:text="Санкт-Петербург, LED"
+			android:textColor="@color/grey_37474F"
+			android:textSize="15dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_depart_airport_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_depart_name"
+			android:layout_marginTop="2dp"
+			android:text="Пулково"
+			android:textAllCaps="true"
+			android:textColor="@color/grey_98000000"
+			android:textSize="10dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_carrier_info"
+			typeface="roboto_regular"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_depart_airport_name"
+			android:layout_marginTop="22dp"
+			android:text="Рейс AF-1437"
+			android:textColor="@color/grey_37474F"
+			android:textSize="14dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_departure_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_carrier_info"
+			android:layout_marginTop="7dp"
+			android:text="07:30"
+			android:textColor="@color/dark_blue_455A64"
+			android:textSize="24dp"
+			app:typeface="roboto_light"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_departure_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_departure_time"
+			android:layout_marginTop="-1dp"
+			android:text="5 ноя, Пт"
+			android:textAllCaps="true"
+			android:textColor="@color/grey_98000000"
+			android:textSize="10dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_dash"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_carrier_info"
+			android:layout_marginTop="12dp"
+			android:layout_toRightOf="@+id/tv_departure_time"
+			android:text=" – "
+			android:textColor="@color/dark_blue_455A64"
+			android:textSize="24dp"
+			app:typeface="roboto_light"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_arrival_time"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/tv_departure_time"
+			android:layout_below="@+id/tv_arrival_date"
+			android:layout_toRightOf="@+id/tv_dash"
+			android:text="07:30"
+			android:textColor="@color/dark_blue_455A64"
+			android:textSize="24dp"
+			app:typeface="roboto_light"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_arrival_date"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_arrival_time"
+			android:layout_alignTop="@+id/tv_departure_date"
+			android:text="5 ноя, Пт"
+			android:textAllCaps="true"
+			android:textColor="@color/grey_98000000"
+			android:textSize="10dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_flight_duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tv_departure_time"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="7dp"
+			android:text="4ч 37м"
+			android:textColor="@color/grey_98000000"
+			android:textSize="14dp"/>
+
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_arrival_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_departure_date"
+			android:layout_marginTop="22dp"
+			android:text="Санкт-Петербург, LED"
+			android:textColor="@color/grey_37474F"
+			android:textSize="15dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_arrival_airport_name"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignLeft="@+id/tv_depart_name"
+			android:layout_below="@+id/tv_arrival_name"
+			android:layout_marginTop="2dp"
+			android:text="Пулково"
+			android:textAllCaps="true"
+			android:textColor="@color/grey_98000000"
+			android:textSize="10dp"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBottom="@+id/tv_arrival_airport_name"
+			android:layout_alignTop="@+id/tv_depart_name"
+			android:layout_marginLeft="22dp"
+			android:paddingTop="2dp"
+			android:scaleType="center"
+			android:src="@drawable/ic_line"
+			android:tint="@color/colorAsPrimary"/>
+
+</ru.aviasales.template.ui.view.TicketFlightSegmentView>

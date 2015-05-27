@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:clipToPadding="false"
+		android:fitsSystemWindows="true"
+		android:orientation="vertical">
+
+	<LinearLayout
+			android:id="@+id/rl_select_airport_fragment_bg"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/white"
+			android:minHeight="56dp"
+			android:orientation="vertical">
+
+		<View
+				android:id="@+id/divider1"
+				android:layout_width="match_parent"
+				android:layout_height="1px"
+				android:layout_marginTop="55.66dp"
+				android:background="@color/gray_divider"/>
+
+		<android.support.v7.widget.RecyclerView
+				android:id="@+id/rv_select_airport_fragment"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<RelativeLayout
+			android:id="@+id/rl_select_airport_fragment_icons"
+			android:layout_width="match_parent"
+			android:layout_height="56dp">
+
+		<FrameLayout
+				android:id="@+id/fl_select_airport_fragment_find_icon_layout"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_marginLeft="4dp"
+				android:layout_marginTop="4dp">
+
+			<ImageView
+					android:id="@+id/iv_select_airport_find"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:src="@drawable/ic_airport_select_search"/>
+		</FrameLayout>
+
+		<EditText
+				android:id="@+id/etv_select_airport_fragment"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/fl_select_airport_fragment_cancel_icon_layout"
+				android:layout_toRightOf="@+id/fl_select_airport_fragment_find_icon_layout"
+				android:singleLine="true"
+				android:textColor="@color/dark_blue_text"/>
+
+		<FrameLayout
+				android:id="@+id/fl_select_airport_fragment_cancel_icon_layout"
+				android:layout_width="48dp"
+				android:layout_height="48dp"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="4dp"
+				android:layout_marginTop="4dp"
+				android:background="@drawable/results_item">
+
+			<ImageView
+					android:id="@+id/iv_select_airport_cancel"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:src="@drawable/ic_airport_select_exit"/>
+		</FrameLayout>
+	</RelativeLayout>
+</RelativeLayout>

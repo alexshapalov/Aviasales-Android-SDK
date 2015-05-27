@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="rectangle">
+			<solid android:color="@android:color/transparent"/>
+		</shape>
+	</item>
+	<item
+			android:bottom="@dimen/filters_seekbar_thumb_padding_top_and_bottom"
+			android:top="@dimen/filters_seekbar_thumb_padding_top_and_bottom">
+		<shape
+				android:shape="oval">
+			<size
+					android:width="@dimen/filters_seekbar_thumb_width_and_height"
+					android:height="@dimen/filters_seekbar_thumb_width_and_height"/>
+			<solid android:color="@color/colorAviasalesMain"/>
+		</shape>
+	</item>
+
+	<item
+			android:bottom="@dimen/filters_seekbar_thumb_padding_top_and_bottom"
+			android:top="@dimen/filters_seekbar_thumb_padding_top_and_bottom">
+		<shape
+				android:shape="oval">
+			<size
+					android:width="@dimen/filters_seekbar_thumb_width_and_height"
+					android:height="@dimen/filters_seekbar_thumb_width_and_height"/>
+			<solid android:color="#22000000"/>
+		</shape>
+	</item>
+</layer-list>

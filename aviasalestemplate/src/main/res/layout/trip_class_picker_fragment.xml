@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_dialog_title"
+			style="@style/dialog.title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="18.67dp"
+			android:paddingLeft="23dp"
+			android:text="@string/trip_class_picker_passengers"/>
+
+	<FrameLayout
+			style="@style/button.light"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_marginTop="17.33dp"
+			android:paddingLeft="23.33dp"
+			android:paddingRight="24dp">
+
+		<com.devspark.robototextview.widget.RobotoCheckedTextView
+				android:id="@+id/tv_economy"
+				style="@style/dialog.tripclass.item"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:duplicateParentState="true"
+				android:gravity="center_vertical"
+				android:text="@string/trip_class_economy"/>
+
+	</FrameLayout>
+
+	<FrameLayout
+			style="@style/button.light"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:paddingLeft="23.33dp"
+			android:paddingRight="24dp">
+
+		<com.devspark.robototextview.widget.RobotoCheckedTextView
+				android:id="@+id/tv_business"
+				style="@style/dialog.tripclass.item"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:duplicateParentState="true"
+				android:gravity="center_vertical"
+				android:text="@string/trip_class_business"/>
+
+	</FrameLayout>
+
+</LinearLayout>

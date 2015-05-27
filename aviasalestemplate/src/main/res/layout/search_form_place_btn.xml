@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+
+	<LinearLayout
+			android:id="@+id/lt_search_form_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_city"
+				style="@style/search.destination.city"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_airport"
+				style="@style/search.destination.airport"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="1dp"/>
+
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<item android:state_pressed="true" app:state_selector_enabled="true">
+		<layer-list>
+			<item>
+				<bitmap android:src="@drawable/passengers_picker_plus_btn"/>
+			</item>
+			<item>
+				<shape android:shape="oval">
+					<solid android:color="@color/grey_selector"/>
+				</shape>
+			</item>
+		</layer-list>
+	</item>
+
+
+	<item app:state_selector_enabled="true" android:state_pressed="false">
+		<bitmap android:src="@drawable/passengers_picker_plus_btn"/>
+	</item>
+
+	<item app:state_selector_enabled="false">
+		<bitmap android:src="@drawable/passengers_picker_plus_btn_dis"/>
+	</item>
+
+</selector>

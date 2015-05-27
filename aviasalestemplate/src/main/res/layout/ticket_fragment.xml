@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/grey_FAFAFA">
+
+	<RelativeLayout
+			android:id="@+id/scroll_view_child"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:clipChildren="false"
+			android:orientation="vertical">
+
+		<ScrollView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_below="@+id/best_price_container">
+
+			<ru.aviasales.template.ui.view.TicketView
+					android:id="@+id/ticket"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="3dp"
+					android:paddingRight="3dp"/>
+
+		</ScrollView>
+
+		<RelativeLayout
+				android:id="@+id/best_price_container"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/grey_FAFAFA">
+
+			<RelativeLayout
+					android:id="@+id/rl_price"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_centerHorizontal="true"
+					android:layout_marginTop="8dp">
+
+				<com.devspark.robototextview.widget.RobotoTextView
+						android:id="@+id/tv_price"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="2 280 404"
+						android:textColor="@color/dark_blue_455A64"
+						android:textSize="32dp"
+						app:typeface="roboto_light"/>
+
+				<com.devspark.robototextview.widget.RobotoTextView
+						android:id="@+id/tv_currency"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignBaseline="@+id/tv_price"
+						android:layout_marginLeft="4dp"
+						android:layout_toRightOf="@+id/tv_price"
+						android:text="RUB"
+						android:textAllCaps="true"
+						android:textColor="@color/dark_blue_455A64"
+						android:textSize="10dp"
+						app:typeface="roboto_slab_regular"/>
+			</RelativeLayout>
+
+			<com.devspark.robototextview.widget.RobotoButton
+					android:id="@+id/btn_buy"
+					android:layout_width="match_parent"
+					android:layout_height="51dp"
+					android:layout_below="@id/rl_price"
+					android:layout_centerHorizontal="true"
+					android:layout_gravity="center"
+					android:layout_marginBottom="12dp"
+					android:layout_marginLeft="14dp"
+					android:layout_marginRight="14dp"
+					android:layout_marginTop="20dp"
+					android:background="@drawable/search_form_button"
+					android:text="@string/ticket_buy_btn_txt_full"
+					android:textColor="@color/white"/>
+
+			<View
+					android:id="@+id/v_divider"
+					android:layout_width="match_parent"
+					android:layout_height="1dp"
+					android:layout_below="@+id/btn_buy"
+					android:background="@color/gray_divider"/>
+
+
+		</RelativeLayout>
+
+
+	</RelativeLayout>
+
+</RelativeLayout>
+

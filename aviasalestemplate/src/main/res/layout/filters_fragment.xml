@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@color/white"
+		android:orientation="vertical">
+
+	<ScrollView
+			android:id="@+id/scroll_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:fillViewport="true"
+			android:overScrollMode="never">
+
+		<LinearLayout
+				android:id="@+id/llay_filters_fragment_components"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5.66dp"
+				android:orientation="vertical"
+				android:paddingBottom="16dp">
+
+			<!-- Hack to prevent jerking when we hide/show some of container views-->
+			<View
+					android:id="@+id/focus_view"
+					android:layout_width="fill_parent"
+					android:layout_height="0dp"
+					android:focusable="true"
+					android:focusableInTouchMode="true">
+
+				<requestFocus/>
+			</View>
+
+			<LinearLayout
+					android:id="@+id/tabInfo"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+				<com.devspark.robototextview.widget.RobotoTextView
+						android:id="@+id/tv_filters_fragment_found_tickets"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:layout_marginBottom="8dp"
+						android:layout_marginTop="8dp"
+						android:gravity="center"
+						android:textColor="@color/gray_828282"
+						android:textSize="13.33dp"/>
+
+				<com.devspark.robototextview.widget.RobotoButton
+						android:id="@+id/btn_filters_fragment_clear"
+						android:layout_width="124dp"
+						android:layout_height="30dp"
+						android:layout_gravity="center_horizontal"
+						android:layout_marginBottom="5dp"
+						android:background="@drawable/button_light_bkg"
+						android:enabled="false"
+						android:text="@string/filters_reset"
+						android:textColor="@drawable/color_text_selectable"
+						android:textSize="9.33dp"
+						app:typeface="roboto_medium"/>
+
+			</LinearLayout>
+
+			<View
+					android:layout_width="match_parent"
+					android:layout_height="1px"
+					android:background="@color/gray_828282"/>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>

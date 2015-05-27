@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		android:id="@+id/llDestinationFeagmentLocation"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:background="@drawable/results_item"
+		android:gravity="center">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_destination_fragment_location_text"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:duplicateParentState="true"
+			android:gravity="center"
+			android:textColor="@color/grey_text"
+			android:textSize="13.33dp"
+			android:visibility="gone"/>
+
+	<ru.aviasales.template.ui.view.ActivityIndicator
+			android:id="@+id/pb_destination_fragment_location_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"/>
+
+</RelativeLayout>

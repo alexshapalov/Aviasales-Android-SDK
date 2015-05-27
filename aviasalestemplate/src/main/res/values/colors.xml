@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="grey_37474F">#37474F</color>
+	<color name="grey_98000000">#98000000</color>
+	<color name="grey_E4E4E4">#E4E4E4</color>
+	<color name="grey_B3BDBDBD">#B3BDBDBD</color>
+	<color name="grey_B3555555">#B3555555</color>
+	<color name="grey_FAFAFA">#FAFAFA</color>
+
+	<color name="gray_88333333">#88333333</color>
+
+	<color name="white">#FFFFFF</color>
+	<color name="yellow_FDCC50">#FDCC50</color>
+
+	<color name="blue_00B0DD">#00B0DD</color>
+	<color name="blue_009DC5">#009DC5</color>
+
+	<color name="gray_blue">#90A4AE</color>
+	<color name="gray_blue_dark">#78909C</color>
+
+	<color name="black_000000_opacity_12">#1f000000</color>
+
+	<color name="grey_selector">@color/black_000000_opacity_12</color>
+
+	<color name="grey_background">@color/grey_FAFAFA</color>
+
+	<color name="dark_blue_455A64">#455A64</color>
+
+	<color name="grey_text">@color/grey_37474F</color>
+	<color name="light_grey_text">@color/grey_98000000</color>
+
+	<color name="gray_divider">@color/grey_E4E4E4</color>
+	<color name="dark_blue_text">@color/dark_blue_455A64</color>
+
+	<color name="blue_main">@color/blue_00B0DD</color>
+	<color name="blue_main_dark">@color/blue_009DC5</color>
+	<color name="action_bar_color">@color/gray_blue</color>
+
+	<color name="white_selector">#20FFFFFF</color>
+
+	<color name="progress_bar_active">@color/colorAviasalesMain</color>
+
+	<color name="colorAsPrimary">@color/gray_blue</color>
+	<color name="colorAsPrimaryDark">@color/gray_blue_dark</color>
+	<color name="colorAviasalesMain">@color/blue_main</color>
+
+</resources>

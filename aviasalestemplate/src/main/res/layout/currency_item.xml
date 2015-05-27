@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="36dp">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_currency_item_code"
+			android:layout_width="wrap_content"
+			android:layout_height="36dp"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="22.66dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/gray_828282"
+			android:textSize="13.33dp"
+			app:typeface="roboto_slab_regular"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_currency_item_name"
+			android:layout_width="match_parent"
+			android:layout_height="36dp"
+			android:layout_marginRight="5dp"
+			android:layout_toLeftOf="@id/tv_currency_item_code"
+			android:drawableLeft="@drawable/radio_button_no_selector"
+			android:drawablePadding="14.66dp"
+			android:ellipsize="end"
+			android:gravity="center_vertical"
+			android:paddingLeft="24.33dp"
+			android:singleLine="true"
+			android:text="Российский рубль"
+			android:textColor="@color/gray_828282"
+			android:textSize="13.33dp"/>
+</RelativeLayout>

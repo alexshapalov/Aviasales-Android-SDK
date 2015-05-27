@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_checked="false">
+		<layer-list>
+			<item android:right="9dp">
+				<bitmap android:gravity="right|center_vertical" android:src="@drawable/radio_button"/>
+			</item>
+		</layer-list>
+	</item>
+
+	<item  android:state_checked="true">
+		<layer-list>
+			<item android:right="9dp">
+				<bitmap android:gravity="right|center_vertical"
+				        android:src="@drawable/radio_button_checked"
+				        android:tint="@color/colorAviasalesMain"/>
+			</item>
+		</layer-list>
+	</item>
+
+</selector>

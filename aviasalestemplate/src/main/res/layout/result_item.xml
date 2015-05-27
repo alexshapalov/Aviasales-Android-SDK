@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.aviasales.template.ui.view.ResultsItemView
+		android:id="@+id/cv_results_item"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/results_item_margin_bottom"
+		android:layout_marginLeft="@dimen/results_item_margin_left"
+		android:layout_marginRight="@dimen/results_item_margin_right"
+		android:layout_marginTop="@dimen/results_item_margin_top"
+		android:orientation="vertical"
+		card_view:cardCornerRadius="3dp"
+		card_view:cardUseCompatPadding="true">
+
+	<RelativeLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@drawable/results_item"
+			android:duplicateParentState="true">
+
+		<RelativeLayout
+				android:id="@+id/content"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingBottom="@dimen/results_item_padding_bottom"
+				android:paddingTop="@dimen/results_item_padding_top">
+
+			<RelativeLayout
+					android:id="@+id/top_line"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_alignParentTop="true"
+					android:layout_marginLeft="14dp"
+					android:layout_marginRight="17dp">
+
+				<com.devspark.robototextview.widget.RobotoTextView
+						android:id="@+id/tv_currency"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignBaseline="@id/tv_price"
+						android:layout_marginLeft="4dp"
+						android:layout_toRightOf="@id/tv_price"
+						android:text="RUB"
+						android:textColor="@color/yellow_FDCC50"
+						android:textSize="10dp"/>
+
+				<com.devspark.robototextview.widget.RobotoTextView
+						android:id="@+id/tv_price"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignBottom="@+id/iv_airline"
+						android:layout_alignTop="@+id/iv_airline"
+						android:gravity="center_vertical"
+						android:text="1234"
+						android:textColor="@color/yellow_FDCC50"
+						android:textSize="32dp"/>
+
+				<ImageView
+						android:id="@+id/iv_airline"
+						android:layout_width="@dimen/airline_logo_width"
+						android:layout_height="@dimen/airline_logo_height"
+						android:layout_alignParentRight="true"/>
+
+			</RelativeLayout>
+
+			<ru.aviasales.template.ui.view.ResultsItemRouteView
+					android:id="@+id/direct_route"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@+id/top_line"/>
+
+			<ru.aviasales.template.ui.view.ResultsItemRouteView
+					android:id="@+id/return_route"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_alignParentLeft="true"
+					android:layout_below="@+id/direct_route"
+					android:layout_marginTop="7dp"/>
+
+		</RelativeLayout>
+	</RelativeLayout>
+</ru.aviasales.template.ui.view.ResultsItemView>

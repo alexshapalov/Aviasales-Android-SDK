@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.aviasales.template.ui.view.TicketRelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginLeft="5dp"
+		android:layout_marginRight="5dp"
+		android:layout_marginTop="11dp"
+		android:clipToPadding="false">
+
+	<LinearLayout
+			android:id="@+id/ll_ticket_details_card_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@color/grey_FAFAFA"
+			android:orientation="vertical">
+	</LinearLayout>
+
+</ru.aviasales.template.ui.view.TicketRelativeLayout>

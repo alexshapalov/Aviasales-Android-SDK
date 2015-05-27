@@ -1,0 +1,197 @@
+<resources>
+
+	<style name="AviasalesTemplateTheme" parent="BaseAppTheme">
+	</style>
+
+	<style name="BaseAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorControlActivated">@color/colorAviasalesMain</item>
+		<item name="colorPrimary">@color/colorAsPrimary</item>
+		<item name="colorPrimaryDark">@color/colorAsPrimaryDark</item>
+	</style>
+
+	<style name="search.passengers"
+	       parent="search.class">
+		<item name="android:textSize">14dp</item>
+	</style>
+
+	<style name="search.class"
+	       parent="search.class.title">
+		<item name="android:textSize">14dp</item>
+		<item name="android:textColor">@color/grey_37474F</item>
+	</style>
+
+	<style name="search.class.title"
+	       parent="search">
+		<item name="typeface">roboto_regular</item>
+		<item name="android:textSize">12dp</item>
+		<item name="android:textColor">@color/grey_37474F</item>
+	</style>
+
+	<style name="search"
+	       parent="AviasalesTemplateTheme"/>
+
+	<style name="search.date.normal"
+	       parent="search.text.normal"/>
+
+	<style name="search.text.normal"
+	       parent="search.onelinetext">
+		<item name="android:textSize">14dp</item>
+		<item name="typeface">roboto_regular</item>
+		<item name="android:textColor">@color/search_form_destination_text</item>
+	</style>
+
+	<style name="search.onelinetext">
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="search.date.small"
+	       parent="search.text.small">
+	</style>
+
+	<style name="search.text.small"
+	       parent="search.onelinetext">
+		<item name="android:textSize">12dp</item>
+		<item name="typeface">roboto_regular</item>
+		<item name="android:textColor">@color/grey_98000000</item>
+	</style>
+
+	<style name="common"/>
+
+	<style name="button.light" parent="common">
+		<item name="android:background">@drawable/button_light_bkg</item>
+		<item name="android:clickable">true</item>
+	</style>
+
+	<style name="search.destination.iata"
+	       parent="search.onelinetext">
+		<item name="android:textSize">24dp</item>
+		<item name="android:textColor">@color/dark_blue_455A64</item>
+		<item name="typeface">roboto_medium</item>
+	</style>
+
+	<style name="search.passengers.title"
+	       parent="search.class.title">
+		<item name="android:textColor">@color/grey_98000000</item>
+	</style>
+
+	<style name="search.destination.city"
+	       parent="search.onelinetext">
+		<item name="android:textSize">18dp</item>
+		<item name="typeface">roboto_regular</item>
+		<item name="android:textColor">@color/grey_37474F</item>
+	</style>
+
+	<style name="search.destination.airport"
+	       parent="search.onelinetext">
+		<item name="android:textSize">10dp</item>
+		<item name="typeface">roboto_regular</item>
+		<item name="android:textColor">@color/grey_37474F</item>
+	</style>
+
+	<style name="CustomDialog" parent="Base.Theme.AppCompat.Light.Dialog">
+		<item name="android:windowBackground">@drawable/rounded_dialog</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:alwaysDrawnWithCache">false</item>
+		<item name="android:windowContentOverlay">@null</item>
+	</style>
+
+	<style name="dialog"/>
+
+	<style name="dialog.title" parent="dialog">
+		<item name="android:textSize">20dp</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:ellipsize">marquee</item>
+		<item name="typeface">roboto_medium</item>
+		<item name="android:textColor">@color/grey_text</item>
+	</style>
+
+	<style name="dialog.passenger" parent="dialog"/>
+
+	<style name="dialog.passengerPicker.text" parent="dialog.passenger">
+		<item name="android:textSize">12dp</item>
+	</style>
+
+	<style name="dialog.tripclass.item" parent="dialog.sorting.item">
+		<item name="android:background">@drawable/radio_button_no_selector</item>
+	</style>
+
+	<style name="dialog.sorting.item" parent="dialog">
+		<item name="android:textSize">13.33dp</item>
+		<item name="android:textColor">@color/grey_text</item>
+		<item name="android:background">@drawable/radio_button_selectable</item>
+	</style>
+
+
+	<style name="base_listview_with_divider">
+		<item name="android:dividerHeight">1px</item>
+	</style>
+
+	<style name="results.listview"
+	       parent="base_listview_with_divider">
+		<item name="android:overScrollMode">ifContentScrolls</item>
+		<item name="android:cacheColorHint">@color/white</item>
+		<item name="android:dividerHeight">0.33dp</item>
+		<item name="android:divider">@drawable/results_listview_divider</item>
+		<item name="android:smoothScrollbar">true</item>
+		<item name="android:paddingBottom">8dp</item>
+		<item name="android:clipToPadding">false</item>
+	</style>
+
+	<style name="results.actionbar.title" parent="results">
+		<item name="android:textColor">@color/white</item>
+		<item name="android:textSize">20dp</item>
+		<item name="typeface">roboto_medium</item>
+	</style>
+
+	<style name="results"
+	       parent="Theme.Aviasales"/>
+
+	<style name="Theme.Aviasales" parent="Theme.AppCompat.Light.NoActionBar">
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowNoTitle">true</item>
+	</style>
+
+	<style name="waiting.dialog.text.medium"
+	       parent="main_text_color_without_states">
+		<item name="android:textSize">18dp</item>
+	</style>
+
+	<style name="main_text_color_without_states">
+		<item name="android:textColor">@color/dark_blue_455A64</item>
+	</style>
+
+	<style name="waiting.dialog.text.small"
+	       parent="main_text_color_without_states">
+		<item name="android:textSize">14dp</item>
+	</style>
+
+	<style name="browser.dialog"
+	       parent="CustomDialog">
+		<item name="android:windowBackground">@drawable/browser_dialog_bkg</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowIsFloating">true</item>
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:alwaysDrawnWithCache">false</item>
+		<item name="android:windowContentOverlay">@null</item>
+		<item name="android:width">225dp</item>
+	</style>
+
+	<style name="browser"/>
+
+	<style name="browser.dialog.text"
+	       parent="browser">
+		<item name="android:textSize">15.5dp</item>
+		<item name="android:textColor">@color/white</item>
+	</style>
+
+	<style name="filters_seekbar"
+	       parent="@android:style/Widget.SeekBar">
+		<item name="android:maxHeight">@dimen/filters_seekbar_height</item>
+		<item name="android:progressDrawable">@drawable/filters_seekbar</item>
+		<item name="android:thumb">@drawable/seek_bar_thumb</item>
+	</style>
+</resources>

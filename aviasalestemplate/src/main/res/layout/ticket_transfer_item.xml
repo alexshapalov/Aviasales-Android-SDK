@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.aviasales.template.ui.view.TicketTransferView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="63dp"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="4dp">
+
+	<View
+			android:layout_width="match_parent"
+			android:layout_height="0.33dp"
+			android:layout_alignParentTop="true"
+			android:layout_marginLeft="63dp"
+			android:background="@color/grey_E4E4E4"/>
+
+	<View
+			android:layout_width="match_parent"
+			android:layout_height="0.33dp"
+			android:layout_alignParentBottom="true"
+			android:layout_marginLeft="63dp"
+			android:background="@color/grey_E4E4E4"/>
+
+	<ImageView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="24dp"
+			android:src="@drawable/ic_transfer"
+			android:tint="@color/colorAsPrimary"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_city"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="64dp"
+			android:layout_marginRight="5dp"
+			android:layout_toLeftOf="@+id/tv_duration"
+			android:ellipsize="marquee"
+			android:singleLine="true"
+			android:text="Санта-Крус-де-Ла-Пальма-Мальма, SDP"
+			android:textColor="@color/grey_37474F"
+			android:textSize="14dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_duration"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_marginRight="7dp"
+			android:text="4ч 37м"
+			android:textColor="@color/grey_98000000"
+			android:textSize="12dp"/>
+
+</ru.aviasales.template.ui.view.TicketTransferView>

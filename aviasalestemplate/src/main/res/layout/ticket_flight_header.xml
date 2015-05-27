@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ru.aviasales.template.ui.view.TicketFlightHeaderView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="61dp"
+		android:layout_marginTop="1dp">
+
+	<ImageView
+			android:id="@+id/plane"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="8dp"
+			android:src="@drawable/ic_ticket_plane"
+			android:tint="@color/colorAviasalesMain"/>
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="63dp">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_cities"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:ellipsize="marquee"
+				android:singleLine="true"
+				android:text="Санкт-Петербург — Санта-Круз-Де-Ла-Пальма"
+				android:textColor="@color/dark_blue_455A64"
+				android:textSize="16dp"
+				app:typeface="roboto_regular"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_duration"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignLeft="@+id/tv_cities"
+				android:layout_below="@+id/tv_cities"
+				android:singleLine="true"
+				android:text="4ч 37м"
+				android:textColor="@color/grey_98000000"
+				android:textSize="14dp"
+				app:typeface="roboto_regular"/>
+	</RelativeLayout>
+
+</ru.aviasales.template.ui.view.TicketFlightHeaderView>

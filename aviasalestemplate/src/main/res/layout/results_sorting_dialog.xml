@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:paddingLeft="14dp"
+		android:paddingRight="15dp"
+		android:paddingTop="19dp">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			style="@style/dialog.title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="@string/results_sorting_dialog_title"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_price"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="18dp"
+			android:padding="9dp"
+			android:text="@string/sorting_by_price"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_departure"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_departure"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_arrival"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_arrival"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_departure_on_way_back"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_departure_on_return"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_arrival_on_way_back"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_arrival_on_return"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_duration"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_duration"/>
+
+	<com.devspark.robototextview.widget.RobotoCheckedTextView
+			android:id="@+id/tv_sort_by_rating"
+			style="@style/dialog.sorting.item"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="9dp"
+			android:text="@string/sorting_by_rating"/>
+
+</LinearLayout>

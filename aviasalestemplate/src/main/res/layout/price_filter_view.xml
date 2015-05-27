@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		android:id="@+id/llay_price_filter_view_filter"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="92dp"
+		android:background="@color/white"
+		android:gravity="center_vertical"
+		android:orientation="vertical"
+		android:paddingTop="13dp"
+		android:visibility="visible">
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="15dp">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/txtv_price_filter_view_min"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_toLeftOf="@+id/txtv_price_filter_view_max"
+				android:text="Цена"
+				android:textColor="@color/gray_828282"
+				android:textSize="16dp"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/txtv_price_filter_view_max"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/txtv_price_filter_view_min"
+				android:layout_alignParentRight="true"
+				android:layout_marginRight="15dp"
+				android:text="13 000"
+				android:textColor="@color/colorAviasalesMain"
+				android:textSize="14.66dp"/>
+	</RelativeLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="20dp"
+			android:layout_marginRight="20dp"
+			android:gravity="bottom"
+			android:orientation="vertical">
+
+		<SeekBar
+				android:id="@+id/sbar_price_filter_view"
+				style="@style/filters_seekbar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginBottom="10dp"/>
+	</LinearLayout>
+</LinearLayout>

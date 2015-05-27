@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="225dp"
+		android:layout_height="wrap_content">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_loading_agency"
+			style="@style/browser.dialog.text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginLeft="8dp"
+			android:layout_marginRight="8dp"
+			android:layout_marginTop="23dp"
+			android:gravity="center"
+			android:text="@string/browser_loading_agency"/>
+
+	<ru.aviasales.template.ui.view.ActivityIndicator
+			android:layout_width="47.3dp"
+			android:layout_height="47.3dp"
+			android:layout_below="@+id/tv_loading_agency"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="21dp"
+			android:layout_marginTop="11dp"
+			app:indicatorType="small_white"/>
+
+</RelativeLayout>

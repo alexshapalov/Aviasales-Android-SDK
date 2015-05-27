@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+			android:id="@+id/sort"
+			android:icon="@drawable/ic_sort"
+			android:title="@string/menu_sort"
+			app:showAsAction="always"/>
+	<item
+			android:id="@+id/filters"
+			android:icon="@drawable/ic_filters"
+			android:title="@string/menu_filters"
+			app:showAsAction="always"/>
+	<item
+			android:id="@+id/currency"
+			android:title="@string/menu_currency"
+			app:actionLayout="@layout/currency_layout"
+			app:showAsAction="always"/>
+</menu>

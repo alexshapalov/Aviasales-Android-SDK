@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:layout_width="wrap_content"
+			android:layout_height="44dp"
+			android:layout_marginBottom="1.33dp"
+			android:layout_marginLeft="15dp"
+			android:layout_marginTop="15.66dp"
+			android:gravity="center_vertical"
+			android:paddingTop="3.33dp"
+			android:text="@string/stop_over_filter_title"
+			android:textColor="@color/gray_A7A7A7"
+			android:textSize="13.33dp"/>
+
+	<include
+			android:id="@+id/cv_stop_over_filter_view_without"
+			layout="@layout/stop_over_filter_item_view"/>
+
+	<include
+			android:id="@+id/cv_stop_over_filter_view_one"
+			layout="@layout/stop_over_filter_item_view"/>
+
+	<include
+			android:id="@+id/cv_stop_over_filter_view_two_plus"
+			layout="@layout/stop_over_filter_item_view"/>
+</LinearLayout>

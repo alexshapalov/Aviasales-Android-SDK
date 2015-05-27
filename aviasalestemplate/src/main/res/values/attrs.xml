@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="SearchFormPlaceButton">
+		<attr name="placeType">
+			<enum name="departurePlace" value="0"/>
+			<enum name="destinationPlace" value="1"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="SearchFormDateButton">
+		<attr name="dateType">
+			<enum name="departDate" value="0"/>
+			<enum name="returnDate" value="1"/>
+			<enum name="departDateLight" value="2"/>
+			<enum name="returnDateLight" value="3"/>
+			<enum name="departDateLargeLight" value="4"/>
+			<enum name="returnDateLargeLight" value="5"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="ActivityIndicator">
+		<attr name="duration" format="integer"/>
+		<attr name="indicatorType">
+			<enum name="big" value="0"/>
+			<enum name="small_blue" value="1"/>
+			<enum name="small_white" value="2"/>
+		</attr>
+	</declare-styleable>
+
+	<declare-styleable name="PassengersPickerView">
+		<attr name="passengerType"/>
+	</declare-styleable>
+
+	<declare-styleable name="PassengerPickerImageView">
+		<attr name="state_selector_enabled" format="boolean"/>
+	</declare-styleable>
+
+	<attr name="passengerType" format="enum">
+		<enum name="adults" value="0"/>
+		<enum name="children" value="1"/>
+		<enum name="infants" value="2"/>
+	</attr>
+
+</resources>

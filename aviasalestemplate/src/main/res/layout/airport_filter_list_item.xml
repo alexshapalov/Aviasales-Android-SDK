@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		android:id="@+id/rlay_airport_filter_list_item"
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="56dp"
+		android:layout_gravity="center_horizontal"
+		android:orientation="vertical">
+
+	<CheckBox
+			android:id="@+id/cbox_airport_filter_list_item"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="21dp"
+			android:clickable="false"
+			android:focusable="false"
+			android:saveEnabled="false"/>
+
+	<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="18dp"
+			android:layout_toLeftOf="@+id/llAirportFilterListItemRaitingBlock"
+			android:layout_toRightOf="@+id/cbox_airport_filter_list_item"
+			android:gravity="left|center_vertical"
+			android:orientation="vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tvAirportFilterListItemCity"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="13dp"
+				android:singleLine="true"
+				android:text="Санкт-Петебург"
+				android:textColor="@color/gray_828282"
+				android:textSize="16dp"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tvAirportFilterListItemName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="1dp"
+				android:singleLine="true"
+				android:text="Пулково, Россия"
+				android:textColor="@color/grey_37474F"
+				android:textSize="9.33dp"/>
+	</LinearLayout>
+
+	<LinearLayout
+			android:id="@+id/llAirportFilterListItemRaitingBlock"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_alignParentRight="true"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="15dp"
+			android:gravity="right|center_vertical"
+			android:orientation="vertical">
+
+		<RatingBar
+				android:id="@+id/rbar_airport_filter_list_item"
+				android:layout_width="wrap_content"
+				android:layout_height="9.66dp"
+				android:layout_marginTop="19.33dp"
+				android:isIndicator="true"
+				android:numStars="5"
+				android:progressDrawable="@drawable/raitingstars"
+				android:saveEnabled="false"
+				android:stepSize="0.1"/>
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tvAirportFilterListItemIata"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dp"
+				android:gravity="center_horizontal"
+				android:text="LED"
+				android:textColor="@color/colorAviasalesMain"
+				android:textSize="9.33dp"/>
+
+	</LinearLayout>
+</RelativeLayout>

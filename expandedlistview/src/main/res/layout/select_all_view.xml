@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:id="@+id/rlSelectAllItemView"
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="48dp">
+
+	<CheckBox
+			android:id="@+id/cbSelectAllItem"
+			android:layout_marginLeft="21dp"
+			android:layout_height="match_parent"
+			android:saveEnabled="false"
+			android:focusableInTouchMode="false"
+			android:focusable="false"
+			android:clickable="false"
+			android:layout_width="wrap_content"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tvSelectAllItem"
+			android:layout_width="match_parent"
+			android:layout_marginLeft="18dp"
+			android:layout_toRightOf="@+id/cbSelectAllItem"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:textSize="16dp"
+			android:textColor="@color/gray_828282"
+			android:text="Все авиакомпании"/>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:clipChildren="false"
+		android:clipToPadding="false"
+		android:orientation="vertical"
+		android:paddingLeft="23dp"
+		android:paddingRight="11.66dp"
+		android:paddingTop="18.67dp">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_dialog_title"
+			style="@style/dialog.title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="@string/pass_picker_title"/>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32.67dp"
+			android:gravity="center_vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_adults"
+				style="@style/dialog.passengerPicker.text"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/pass_picker_adult"/>
+
+		<ru.aviasales.template.ui.view.PassengersPickerView
+				android:id="@+id/pp_adults"
+				android:layout_width="122dp"
+				android:layout_height="wrap_content"
+				app:passengerType="adults"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:gravity="center_vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_children"
+				style="@style/dialog.passengerPicker.text"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/pass_picker_child"/>
+
+		<ru.aviasales.template.ui.view.PassengersPickerView
+				android:id="@+id/pp_children"
+				android:layout_width="122dp"
+				android:layout_height="wrap_content"
+				app:passengerType="children"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="8dp"
+			android:gravity="center_vertical">
+
+		<com.devspark.robototextview.widget.RobotoTextView
+				android:id="@+id/tv_infants"
+				style="@style/dialog.passengerPicker.text"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:text="@string/pass_picker_infant"/>
+
+		<ru.aviasales.template.ui.view.PassengersPickerView
+				android:id="@+id/pp_infants"
+				android:layout_width="122dp"
+				android:layout_height="wrap_content"
+				app:passengerType="infants"/>
+
+	</LinearLayout>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_positive_btn"
+			style="@style/button.light"
+			android:layout_width="wrap_content"
+			android:layout_height="36dp"
+			android:layout_gravity="right"
+			android:layout_marginTop="12.33dp"
+			android:gravity="center"
+			android:paddingLeft="15dp"
+			android:paddingRight="15dp"
+			android:text="@string/dialog_finish"
+			android:textColor="@color/colorAviasalesMain"/>
+
+</LinearLayout>

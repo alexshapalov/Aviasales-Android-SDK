@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.aviasales.template.ui.view.StopOverFilterItemView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:gravity="center_vertical">
+
+	<CheckBox
+			android:id="@+id/cb_stop_over_filter_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true"
+			android:layout_marginLeft="21dp"
+			android:clickable="false"
+			android:focusable="false"
+			android:saveEnabled="false"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_stop_over_filter_item_text"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="18dp"
+			android:layout_toRightOf="@+id/cb_stop_over_filter_view"
+			android:gravity="center_vertical"
+			android:text="@string/stop_over_filter_view_twoplus"
+			android:textColor="@color/gray_828282"
+			android:textSize="16dp"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_stop_over_filter_item_price"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignBaseline="@+id/tv_stop_over_filter_item_text"
+			android:layout_alignParentRight="true"
+			android:layout_marginRight="15dp"
+			android:text="10 000"
+			android:textColor="@color/colorAviasalesMain"
+			android:textSize="14.66dp"/>
+</ru.aviasales.template.ui.view.StopOverFilterItemView>

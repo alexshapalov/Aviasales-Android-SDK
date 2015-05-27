@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_vertical">
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_origin"
+			style="@style/results.actionbar.title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="MOW"/>
+
+	<ImageView
+			android:id="@+id/iv_planes_icon"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:layout_marginLeft="5dp"
+			android:layout_marginRight="5dp"
+			android:src="@drawable/ic_title_plane"/>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_destination"
+			style="@style/results.actionbar.title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:singleLine="true"
+			android:text="WAW"/>
+
+</LinearLayout>

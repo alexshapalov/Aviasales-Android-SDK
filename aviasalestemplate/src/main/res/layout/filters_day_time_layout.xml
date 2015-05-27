@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="20dp"
+		android:layout_marginTop="13dp"
+		android:orientation="vertical">
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/btn_range_seekbar_day"
+			android:layout_toLeftOf="@+id/btn_range_seekbar_day">
+
+		<com.devspark.robototextview.widget.RobotoButton
+				android:id="@+id/btn_range_seekbar_morning"
+				android:layout_width="85dp"
+				android:layout_height="25dp"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/filters_day_time_button"
+				android:stateListAnimator="@null"
+				android:text="@string/filters_morning"
+				android:textColor="@color/day_time_button_text_color"
+				android:textSize="12dp"/>
+
+	</FrameLayout>
+
+	<com.devspark.robototextview.widget.RobotoButton
+			android:id="@+id/btn_range_seekbar_day"
+			android:layout_width="85dp"
+			android:layout_height="25dp"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="30dp"
+			android:background="@drawable/filters_day_time_button"
+			android:stateListAnimator="@null"
+			android:text="@string/filters_day"
+			android:textColor="@color/day_time_button_text_color"
+			android:textSize="12dp"/>
+
+	<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignTop="@+id/btn_range_seekbar_day"
+			android:layout_toRightOf="@+id/btn_range_seekbar_day">
+
+		<com.devspark.robototextview.widget.RobotoButton
+				android:id="@+id/btn_range_seekbar_evening"
+				android:layout_width="85dp"
+				android:layout_height="25dp"
+				android:layout_gravity="center_horizontal"
+				android:background="@drawable/filters_day_time_button"
+				android:stateListAnimator="@null"
+				android:text="@string/filters_evening"
+				android:textColor="@color/day_time_button_text_color"
+				android:textSize="12dp"/>
+	</FrameLayout>
+
+</RelativeLayout>

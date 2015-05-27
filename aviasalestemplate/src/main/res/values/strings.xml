@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+	<string name="trip_class_economy">Economy</string>
+	<string name="trip_class_business">Business</string>
+	<string name="trip_class_premium_economy">Premium Economy</string>
+
+	<string name="search_toast_destinations">Please enter origin and destination</string>
+	<string name="search_toast_destinations_equality">You\'ve arrived! Absolutely free :)</string>
+	<string name="search_toast_depart_date">Departure date</string>
+	<string name="search_toast_return_date">Return date or turn off return flight</string>
+	<string name="search_toast_wrong_depart_date">Date of departure may not be earlier than today</string>
+	<string name="search_toast_wrong_return_date">Date of return may not be earlier than today</string>
+	<string name="search_toast_return_date_less_than_depart">Date of return may not be earlier than date of departure</string>
+	<string name="search_toast_dates_more_than_1year">We cannot look for tickets more than one year in advance</string>
+	<string name="search_no_internet_connection">No Internet connection</string>
+	<string name="search_toast_infants_regulations">Number of infants in lap may not be higher than number of adults</string>
+
+	<string name="pass_picker_title">Select passengers</string>
+	<string name="pass_picker_adult">over 12</string>
+	<string name="pass_picker_child">2 to 12 years old</string>
+	<string name="pass_picker_infant">under 2</string>
+	<string name="ok">OK</string>
+
+	<string name="trip_class_picker_passengers">Class</string>
+
+	<string name="destination_no_results">No results found</string>
+
+	<string name="destination_any_airport">Any airport</string>
+
+	<string name="please_wait">Please wait</string>
+	<string name="loading">Loading</string>
+
+	<string name="contextual_delete">Delete (%d)</string>
+
+	<string name="toast_error_unknown">Something is wrong. Please try again later.</string>
+
+	<string name="signature_toast">403 Forbidden: Probably wrong token or api marker.</string>
+	<string name="alert_no_results">No results found. Try adjusting search parameters</string>
+	<string name="toast_error_connection">Ticket search error. Please check your Internet connection.</string>
+	<string name="toast_error_api">Ticket search server error. Please try again later.</string>
+
+	<string name="menu_filters">Filters</string>
+	<string name="menu_sort">Sort</string>
+
+	<string name="toast_no_search_results">\"Ticket information is out-of-date</string>
+
+	<string name="filters_reset">RESET FILTERS</string>
+	<string name="stop_over_filter_view_without">Direct</string>
+	<string name="base_filter_price">Price</string>
+	<string name="base_filter_all_flight">Journey time</string>
+	<string name="base_filter_stop_over">Stopover duration</string>
+	<string name="stop_over">Stops</string>
+	<string name="results_flight_time">Duration</string>
+	<string name="range_flight_from">Outbound Take-Off Time</string>
+	<string name="range_flight_return">Return Take-Off Time</string>
+	<string name="filters_price">up to</string>
+	<string name="filters_hours_and_minutes">up to %1$02d h %2$02d min</string>
+	<string name="range_from">from</string>
+	<string name="range_with">from</string>
+	<string name="range_to">to</string>
+
+	<string name="ab_title_filters">Filters</string>
+	<string name="select_all">Select all</string>
+	<string name="select_all_alliances">All airlines</string>
+	<string name="alliances">Alliances</string>
+	<string name="airlines">Airlines</string>
+	<string name="airports">Airports</string>
+	<string name="agencies">Agencies</string>
+
+	<string name="dash">—</string>
+
+	<string name="hour_short">h</string>
+	<string name="minute_short">m</string>
+	<string-array name="months_short_3">
+		<item>Jan</item>
+		<item>Feb</item>
+		<item>Mar</item>
+		<item>Apr</item>
+		<item>May</item>
+		<item>Jun</item>
+		<item>Jul</item>
+		<item>Aug</item>
+		<item>Sep</item>
+		<item>Oct</item>
+		<item>Nov</item>
+		<item>Dec</item>
+	</string-array>
+	<string-array name="weeks_short_2">
+		<item></item>
+		<item>@string/week_day_short_sunday</item>
+		<item>@string/week_day_short_monday</item>
+		<item>@string/week_day_short_tuesday</item>
+		<item>@string/week_day_short_wednesday</item>
+		<item>@string/week_day_short_thursday</item>
+		<item>@string/week_day_short_friday</item>
+		<item>@string/week_day_short_saturday</item>
+	</string-array>
+	<string name="week_day_short_monday">Mon</string>
+	<string name="week_day_short_tuesday">Tue</string>
+	<string name="week_day_short_wednesday">Wed</string>
+	<string name="week_day_short_thursday">Thu</string>
+	<string name="week_day_short_friday">Fri</string>
+	<string name="week_day_short_saturday">Sat</string>
+	<string name="week_day_short_sunday">Sun</string>
+
+	<string name="ticket_buy_btn_txt_full">BUY TICKET</string>
+
+	<string name="ticket_alert_results_old">Search results may be outdated</string>
+	<string name="ticket_alert_update">Update</string>
+	<string name="ticket_alert_return">To search</string>
+
+	<string name="agency_adapter_server_error">Server response error.</string>
+	<string name="ticket_refresh_dates_passed">Search dates have passed. Please enter new dates.</string>
+
+	<string name="test_pass_picker_num">0</string>
+
+	<string name="browser_backward">Back</string>
+	<string name="browser_forward">Next</string>
+	<string name="browser_loading_agency">Contacting the website of the partner %s</string>
+	<string name="browser_title">Purchase: %s</string>
+	<string name="dialog_finish">DONE</string>
+	<string name="search_form_class">Class</string>
+	<string name="search_form_depart_date_default">Departure date</string>
+	<string name="search_form_return_date_default">Return date</string>
+	<string name="search_form_depart_city_default">ORIGIN</string>
+	<string name="search_form_destination_city_default">DESTINATION</string>
+	<string name="search_form_airport_default">AIRPORT</string>
+	<string name="filters_another_alliances">Airlines that are not part of any alliance</string>
+	<string name="search_form_passengers_title">Passengers</string>
+	<string name="search_form_search_button">Search tickets</string>
+	<string name="select_airport_any_airport">ANY AIRPORT</string>
+
+	<string name="stop_over_filter_title">Stops</string>
+	<string name="overnight_filter_view_airport">Possible night stopover</string>
+
+	<string name="results_sorting_dialog_title">Sort by</string>
+	<string name="sorting_by_price">Price</string>
+	<string name="sorting_by_departure">Departure</string>
+	<string name="sorting_by_arrival">Arrival</string>
+	<string name="sorting_by_departure_on_return">Return Take-Off Time</string>
+	<string name="sorting_by_arrival_on_return">Return Arrival</string>
+	<string name="sorting_by_duration">Duration</string>
+	<string name="sorting_by_rating">Rating</string>
+	<string name="stop_over_filter_view_one">One stop</string>
+	<string name="stop_over_filter_view_twoplus">Two stops</string>
+	<string name="currency_dialog_title">Currency</string>
+	<string name="dot">•</string>
+	<string name="results_no_transfers">—</string>
+	<string name="week_day">day of the week</string>
+	<string name="empty_view_results_title">Nothing is left after your filtering.</string>
+	<string name="empty_view_results_button">reset filters</string>
+
+	<plurals name="found_tickets">
+		<item quantity="one">out of %d ticket</item>
+		<item quantity="other">out of %d tickets</item>
+	</plurals>
+
+	<string name="filters_morning">Morning</string>
+	<string name="filters_day">Day</string>
+	<string name="filters_evening">Evening</string>
+
+	<string name="searching_information">Searching for tickets...</string>
+
+	<string name="ticket_flight_text">Flight</string>
+
+</resources>

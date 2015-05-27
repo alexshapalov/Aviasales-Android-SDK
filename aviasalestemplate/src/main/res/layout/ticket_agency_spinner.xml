@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+	<FrameLayout
+			android:id="@+id/fl_spinner_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:addStatesFromChildren="true"
+			android:background="@drawable/button_light_bkg"
+			android:paddingLeft="8dp"
+			android:paddingRight="8dp">
+
+		<Spinner
+				android:id="@+id/spinner"
+				android:layout_width="match_parent"
+				android:layout_height="40dp"
+				android:layout_gravity="center_vertical"
+				android:background="@drawable/ticket_spinner_bkg"/>
+
+	</FrameLayout>
+
+	<com.devspark.robototextview.widget.RobotoTextView
+			android:id="@+id/tv_spinner"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_gravity="center_vertical"
+			android:gravity="center_vertical"
+			android:textColor="@color/white"
+			android:textSize="20dp"
+			android:visibility="gone"/>
+
+</FrameLayout>
