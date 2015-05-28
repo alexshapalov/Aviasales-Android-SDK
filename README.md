@@ -7,8 +7,8 @@ SDK supports all Android devices with Android 2.3 (API 9) and higher.
 
 The framework consists of:
 * search API library for search server interaction;
-* user interface template project;
-* demo application based on [template project](https://github.com/KosyanMedia/Aviasales-Android-SDK/wiki/Template-project-screens).
+* user interface [template project](https://github.com/KosyanMedia/Aviasales-Android-SDK/wiki/Template-project-screens);
+* [demo application](https://github.com/KosyanMedia/Aviasales-Android-SDK/tree/master/demo) based on template project.
 
 ![][1]
 
